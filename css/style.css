@@ -561,6 +561,11 @@ h6,
 .project-carousel:hover .owl-nav {
   opacity: 1;
 }
+.coming {
+  height: 200px;
+  background-image: url(/img/coming\ soon.jpg);
+  background-size: contain;
+}
 
 .project-carousel .owl-nav .owl-prev,
 .project-carousel .owl-nav .owl-next {
