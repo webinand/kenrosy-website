@@ -151,6 +151,7 @@ h6,
   right: -25px;
   transform: skewX(-30deg);
   background-color: #e77817;
+  /* border: 2px red solid; */
 }
 
 .navbar .navbar-nav .nav-link {
@@ -176,10 +177,24 @@ h6,
   margin-left: 8px;
 }
 
+@media (max-width: 1158px) {
+  .navbar .navbar-brand::after {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .navbar-brand::after {
+    display: none;
+  }
+}
 @media (max-width: 991.98px) {
   .navbar .navbar-nav .nav-link {
     margin-right: 0;
     padding: 10px 0;
+  }
+
+  .navbar .navbar-brand::after {
+    display: block;
   }
 
   .navbar .navbar-nav {
@@ -437,7 +452,7 @@ h6,
 
 .service-item .service-text {
   position: absolute;
-  overflow: hidden;
+  overflow: scroll;
   padding: 65px 30px 25px 30px;
   width: 100%;
   height: 100%;
